@@ -17,12 +17,12 @@ public class IngresoDeUsuarioStepdefinition {
     String alerta;
 
 
-   @Dado("que ingreso a la página de store")
+ /*  @Dado("que ingreso a la página de store")
     public void queIngresoALaPáginaDeStore() {
         ingresoPage = new IngresoPage(driver);
         driver = ingresoPage.chromeDriverConnection();
         ingresoPage.visitWebsite("https://www.demoblaze.com/");
-    }
+    }*/
     @Cuando("inicio sesion de forma exitosa con {string} y {string}")
     public void inicioSesionDeFormaExitosaCon(String usuario, String clave) {
        ingresoPage.ingresarUsuario(usuario,clave);

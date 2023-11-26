@@ -2,7 +2,7 @@
 
 Característica: Inicio de sesion
 
-  "Yo como usuario
+  Yo como usuario
   Quiero entrar al sitio web
   Para comprar producto
 

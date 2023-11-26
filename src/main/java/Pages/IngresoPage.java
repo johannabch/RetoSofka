@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 
 public class IngresoPage extends BaseSelenium {
 
-    boolean visible;
     By botonDeIngreso = By.id("login2");
     By nombresurio = By.id("loginusername");
     By claveUsuario = By.id("loginpassword");
@@ -28,7 +27,6 @@ public class IngresoPage extends BaseSelenium {
             type(usuario, nombresurio);
             type(clave, claveUsuario);
             click(botonIngresar);
-           // visible = isVisible(bienvenida);
 
         } else {
             System.out.print("No fue posible ingresar");
@@ -37,9 +35,7 @@ public class IngresoPage extends BaseSelenium {
 
     @Test
     public Boolean mensajeBienvenida() {
-        visible = isVisible(bienvenida);
-
-        return visible;
+        return isVisible(bienvenida);
     }
 
 

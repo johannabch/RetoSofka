@@ -2,7 +2,7 @@
 
 Característica: registro de usuario
 
-  "Yo como usuario
+  Yo como usuario
   Quiero entrar al sitio web
   Para comprar producto
 
