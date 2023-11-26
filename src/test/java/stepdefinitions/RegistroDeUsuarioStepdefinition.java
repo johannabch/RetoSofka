@@ -17,8 +17,8 @@ public class RegistroDeUsuarioStepdefinition {
 
     String alerta;
 
-    @Dado("que ingreso a la página de store")
-    public void queIngresoALaPáginaDeStore() {
+    @Dado("que ingreso a la página de store para hacer un registro de usuario")
+    public void QueIngresoAlaPáginaDeStoreParaHacerUnRegistroDeUsuario() {
         registroPage = new RegistroPage(driver);
         driver = registroPage.chromeDriverConnection();
         registroPage.visitWebsite("https://www.demoblaze.com/");

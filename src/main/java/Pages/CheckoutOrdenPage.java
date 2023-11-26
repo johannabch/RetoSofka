@@ -16,12 +16,8 @@ public class CheckoutOrdenPage extends BaseSelenium {
     By mes = By.id("month");
     By anio = By.id("year");
     By hacerPedido = By.xpath("//*[@id=\"orderModal\"]/div/div/div[3]/button[2]");
-
     By mensajeDeConfirmacion = By.xpath("/html/body/div[10]");
     By confirmar = By.xpath("/html/body/div[10]/div[7]/div");
-
-
-
 
     public CheckoutOrdenPage(WebDriver driver) {
         super(driver);

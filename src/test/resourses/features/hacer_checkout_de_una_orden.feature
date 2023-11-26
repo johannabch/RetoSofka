@@ -7,10 +7,8 @@ Característica: Hacer checkout de una orden
   Para comprar producto
 
 
-  Antecedentes:
-    Dado que ingreso a la página de store
-
   Esquema del escenario: Hacer checkout de una orden
+    Dado que ingreso a la página de store para registrar pedido
     Cuando ingreso al carrito y hago pedido con los datos de compra "<NOMBRE>" "<PAIS>" "<CIUDAD>" "<TARJETACREDITO>" "<MES>" "<ANIO>"
     Entonces confirmo la compra
 

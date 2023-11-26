@@ -7,10 +7,8 @@ Característica: Inicio de sesion
   Para comprar producto
 
 
-  Antecedentes:
-    Dado que ingreso a la página de store
-
   Esquema del escenario: login exitoso
+    Dado que ingreso a la página de store para hacer un inicio de sesion
     Cuando inicio sesion de forma exitosa con "<USUARIO>" y "<CLAVE>"
     Entonces visualizo mensaje de bienvenida
     Ejemplos:
@@ -18,6 +16,7 @@ Característica: Inicio de sesion
       | pruebaS11 | 123456 |
 
   Esquema del escenario: login con usuario inexistente
+    Dado que ingreso a la página de store para hacer un inicio de sesion
     Cuando inicio de sesion con usuario no registrado "<USUARIO>" y "<CLAVE>"
     Entonces genera alerta indicando que el usuario no está registrado
     Ejemplos:
@@ -25,6 +24,7 @@ Característica: Inicio de sesion
       | Juana21   | 123456 |
 
   Esquema del escenario: login con ingreso de clave incorrecta
+    Dado que ingreso a la página de store para hacer un inicio de sesion
     Cuando inicio de sesion con ingreso de clave incorrecta "<USUARIO>" y "<CLAVE>"
     Entonces genera alerta indicando clave incorrecta
     Ejemplos:
