@@ -66,6 +66,14 @@ public class BaseSelenium {
         }
     }
 
+    public Boolean isVisible(By locator) {
+        try {
+            return driver.findElement(locator).isEnabled();
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            return false;
+        }
+    }
+
     public void visitWebsite(String url) {
         driver.get(url);
 
